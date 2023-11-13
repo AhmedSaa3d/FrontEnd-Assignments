@@ -28,10 +28,8 @@
 // console.log(+parseFloat(myVar).toFixed(2)); // 100.57
 
 //4.5
-/* Not solved yet
-let num = 10;
-console.log(Number.isInteger(num) + Number.isInteger(num)); // 2
-*/
+// let num = 10;
+// console.log(Number.isInteger(num) + Number.isInteger(num)); // 2
 
 //4.6
 // let flt = 10.4;
