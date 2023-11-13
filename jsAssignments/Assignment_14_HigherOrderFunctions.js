@@ -21,14 +21,38 @@
 // });
 // console.log(ansCon);
 
-//14.3  ///NOT Solved
+//14.3
 // let myArray = ["E", "l", "z", ["e", "r"], "o"];
-// Elzero
+// // console.log(typeof myArray);
+// console.log(
+//   myArray.reduce((acc, ele) => {
+//     if (typeof ele == "object")
+//       return (
+//         acc +
+//         ele.reduce((newAcc, newEle) => {
+//           return newAcc + newEle;
+//         }, "")
+//       );
+//     return acc + ele;
+//   }, "")
+// ); // Elzero
 
-//14.4  ///NOT Solved
+//14.4
 // let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
-// [-1, -10, 10, 20, -5, -3]
+// console.log(
+//   numsAndStrings
+//     .filter((ele) => {
+//       return !isNaN(ele);
+//     })
+//     .map((ele) => {
+//       return ele * -1;
+//     })
+// ); // [-1, -10, 10, 20, -5, -3]
 
-//14.5    ///NOT Solved
+//14.5
 // let nums = [2, 12, 11, 5, 10, 1, 99];
-// // 500
+// console.log(
+//   nums.reduce((acc, ele) => {
+//     return ele % 2 != 0 ? acc + ele : acc * ele;
+//   }, 1)
+// );// 500
