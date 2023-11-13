@@ -60,10 +60,8 @@
 // Needed Output
 //[1, 2, 3, 4, 5, 6]
 
-//21.8   //Not Solved Yet
+//21.8
 //video challenge
 // let n1 = [10, 30, 10, 20];
 // let n2 = [30, 20, 10];
-
-// Needed Output
-// 210;
+// console.log(Math.max(...n2) * n1.concat(n2).length);// 210;
