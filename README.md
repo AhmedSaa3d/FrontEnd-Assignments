@@ -28,3 +28,4 @@ This is the Assignments and Challenges of Elzero We School BootCamp
 - Opject Oriented Programming (OOP)
 - Date, Time, Generators And Modules
 - Ajax And JSON
+- Promises
