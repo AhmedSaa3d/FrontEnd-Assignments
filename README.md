@@ -1,5 +1,5 @@
 # JavaScriptAssignments
-This is the Assignments and Challenges of Elzero We School BootCamp
+These are solutions of javaScript Assignments from Elzero Web Scholl.
 # Assignments Link :
 - https://elzero.org/category/assignments/javascript-bootcamp-assignments/
 - # Youtube PlayList Link :
