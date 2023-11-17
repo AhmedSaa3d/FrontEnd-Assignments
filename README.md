@@ -1,5 +1,5 @@
 # JavaScriptAssignments
-These are solutions of javaScript Assignments from Elzero Web Scholl.
+These are solutions of javaScript Assignments/ Challengs from Elzero Web School.
 # Assignments Link :
 - https://elzero.org/category/assignments/javascript-bootcamp-assignments/
 - # Youtube PlayList Link :
