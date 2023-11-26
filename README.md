@@ -1,31 +1,25 @@
-# JavaScriptAssignments
-These are solutions of javaScript Assignments/ Challengs from Elzero Web School.
+# FrontEnd Assignments & Challenges
+    These are solutions of (Sass / javaScript / TypeScript) Assignments / Challengs from Elzero Web School.
 # Assignments Link :
-- https://elzero.org/category/assignments/javascript-bootcamp-assignments/
-- # Youtube PlayList Link :
-- https://www.youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv
-# Assignments/ Challengs Covered Topics :
-- Introduction
-- Data Types And Variables
-- Operators
-- Numbers
-- Strings And Methods
-- Comparisona / Logical Operators
-- If Conditions
-- Switch Statements
-- Arrays And Methods
-- Loop For
-- Loop While
-- Function Parameters
-- Function Scopes
-- Higher Order Function
-- Objects Methods
-- Documents Object Model
-- Browser Object Model
-- Destructuring
-- Map And Set
-- Regular Expression
-- Opject Oriented Programming (OOP)
-- Date, Time, Generators And Modules
-- Ajax And JSON
-- Promises
+    https://elzero.org/category/assignments/
+# Main Covered Topics :
+    JavaScript / Es6 / Sass / TypeScript
+
+# JavaScript (ES6) Assignments/ Challengs Covered Topics :
+  - Introduction/ Data Types And Variables/ Operators/ Numbers/ Strings And Methods/ Comparisona
+  - Logical Operators/ Conditions/ Arrays And Methods
+  - Loops/ Functions/ Higher Order Function/ Objects Methods
+  - Documents Object Model/ Browser Object Model
+  - Destructuring/ Map And Set/ Regular Expression
+  - Opject Oriented Programming (OOP)
+  - Date, Time, Generators And Modules
+  - Ajax/ JSON/ Promises/ Fetch
+
+# TypeScript Assignments Covered Topics :
+  - Introduction/ Deal with environment/ Config
+  -  Data Types/ Generics/ Enums
+  -  Interface/ Classes
+
+# Sass Assignments Covered Topics :
+
+  
