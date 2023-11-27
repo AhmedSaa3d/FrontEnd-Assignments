@@ -5,10 +5,10 @@
   #### https://elzero.org/category/assignments/
 
 ### Main Covered Topics :
-  #### JavaScript
-  #### Es6
-  #### Sass
-  #### TypeScript
+  - #### JavaScript
+  - #### Es6
+  - #### Sass
+  - #### TypeScript
 
 ### JavaScript (ES6) Assignments/ Challengs Covered Topics :
   - Introduction/ Data Types And Variables/ Operators/ Numbers/ Strings And Methods/ Comparisona
