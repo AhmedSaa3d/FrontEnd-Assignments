@@ -1,0 +1,32 @@
+// Assignment 4
+// Functions from 16 - 19
+
+//4.1
+$num: 2;
+$start: 100;
+@function double($size) {
+  @return $size * $num;
+}
+@for $i from 1 through 5 {
+    .box-#{$i * 100}{
+        width: $start+px;
+        height: double($start)+px;
+    }
+    $start : $start * 2;
+}
+
+//4.2
+@function get-total($arr...){
+    $total : 0;
+    @each $i in $arr
+        {
+            $total : $total + $i;
+        }        
+    @return $total;
+}
+
+.box {
+    top: get-total(100, 50, 20);
+    right: get-total(100, 50);
+  }
+  

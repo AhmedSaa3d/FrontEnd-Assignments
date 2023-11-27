@@ -1,0 +1,130 @@
+// Assignment 3
+// Mixin And Loop from 11 - 15
+
+//3.1
+@mixin eleInt(){
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+}
+@mixin arrow-top(){
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    border-bottom-color: red;
+}
+@mixin arrow-bottom(){
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    border-top-color: red;
+}
+@mixin arrow-left(){
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+    border-right-color: red;
+}
+@mixin arrow-right(){
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40px;
+    border-left-color: red;
+}
+@mixin arrow($arrow-type){
+    @include eleInt();
+    @if($arrow-type == "top"){
+        @include arrow-top();
+    }@else if($arrow-type == "right"){
+        @include arrow-right();
+    }@else if($arrow-type == "bottom"){
+        @include arrow-bottom();
+    }@else{
+        @include arrow-left();
+    }
+}
+.element {
+    &:before {
+      @include arrow("right");
+    }
+  }
+
+//3.2
+@for $i from 1 through 16{
+    .col-#{$i}{
+        width: calc($i / 16);
+    }
+}
+
+//3.3
+$names:
+  "books" 20px red 18,
+  "games" 30px green 18,
+  "dvds" 20px blue;
+  @each $clsnam, $pdng, $clr, $fntsze in $names{
+    .#{$clsnam}{
+        padding: $pdng;
+        font-size: if($fntsze,$fntsze + px,16px);
+        border-bottom: 2px solid $clr;
+        color: #444;   
+    }
+  }
+
+//3.4
+$init: 1;
+@while $init <=5{
+    .circle-#{$init * 100}{
+        width: 100px * $init ;
+        height: 100px * $init;
+        border-radius: 50px * $init;
+}
+    $init : $init + 1;
+}
+
+//3.5
+@for $init from 1 through 5{
+    .circle-#{$init * 100}{
+        width: 100px * $init ;
+        height: 100px * $init;
+        border-radius: 50px * $init;
+    }
+}
+
+//3.6
+@mixin placeholder(){
+   .placeholder {
+        @content;
+    }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+textarea {
+    @include placeholder {
+      color: #777;
+    }
+  }
+
+//3.7
+@mixin flex-center($wdth : 400px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $wdth;
+}
+.box-one {
+    @include flex-center(400px);
+  }
+  .box-two {
+    @include flex-center;
+  }
+  
