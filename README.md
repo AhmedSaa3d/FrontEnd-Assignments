@@ -1,13 +1,19 @@
 # FrontEnd Assignments & Challenges
-These are solutions of (Sass / javaScript / TypeScript) Assignments / Challengs from Elzero Web School.
+  These are solutions of (Sass / javaScript / TypeScript) Assignments / Challengs from Elzero Web School.
+
 ### Assignments Link :
-https://elzero.org/category/assignments/
+  #### https://elzero.org/category/assignments/
+
 ### Main Covered Topics :
-JavaScript / Es6 / Sass / TypeScript
+  #### JavaScript
+  #### Es6
+  #### Sass
+  #### TypeScript
 
 ### JavaScript (ES6) Assignments/ Challengs Covered Topics :
   - Introduction/ Data Types And Variables/ Operators/ Numbers/ Strings And Methods/ Comparisona
-  - Logical Operators/ Conditions/ Arrays And Methods
+  - Logical Operators/ Conditions
+  - Arrays And Methods
   - Loops/ Functions/ Higher Order Function/ Objects Methods
   - Documents Object Model/ Browser Object Model
   - Destructuring/ Map And Set/ Regular Expression
@@ -21,5 +27,9 @@ JavaScript / Es6 / Sass / TypeScript
   -  Interface/ Classes
 
 ### Sass Assignments Covered Topics :
-
-  
+  - Nesting Variables
+  - Control Flow
+  - Interpolation
+  - Mixin And Content
+  - Loops
+  - Functions
