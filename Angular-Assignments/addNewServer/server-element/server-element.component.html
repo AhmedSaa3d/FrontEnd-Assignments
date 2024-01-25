@@ -1,0 +1,16 @@
+<div
+  class="card"
+  style="margin-bottom: 2rem"
+  appMakeCard
+  [defaultColor]="'#000'"
+  playerColor="#2ecc71"
+>
+  <div class="card-header">
+    {{ element.name }}
+  </div>
+  <div class="card-body">
+    <p class="card-title">
+      <ng-content></ng-content>
+    </p>
+  </div>
+</div>

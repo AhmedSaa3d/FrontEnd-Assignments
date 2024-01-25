@@ -1,0 +1,22 @@
+<div class="container">
+  <p>Add new Servers or blueprints!</p>
+  <app-cookpit
+    (serverCreated)="onServerAdded($event)"
+    (bPCreated)="onBluePrintAdded($event)"
+  ></app-cookpit>
+
+  <hr />
+
+  <div class="row">
+    <app-server-element
+      class="col-md-3 col-sm-6"
+      *ngFor="let server of serverElements"
+      [serElement]="server"
+    >
+      <strong *ngIf="server.type === 'server'" style="color: red">{{
+        server.content
+      }}</strong>
+      <em *ngIf="server.type === 'blueprint'">{{ server.content }}</em>
+    </app-server-element>
+  </div>
+</div>

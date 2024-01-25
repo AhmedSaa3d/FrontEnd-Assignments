@@ -1,0 +1,21 @@
+<div class="card text-center">
+  <div class="card-body">
+    <h3 class="card-title">{{ serverId }} + {{ serverId + 10 }}</h3>
+
+    <h5
+      class="card-title"
+      [ngStyle]="{ backgroundColor: getBackColor(), color: getColor() }"
+    >
+      {{ serverName }}
+    </h5>
+
+    <p class="card-text">{{ getServerStatus() ? serverId : serverStatus }}</p>
+  </div>
+  <button class="btn bt-primary" [disabled]="disableServer" (click)="onClick()">
+    Server Id Inc
+  </button>
+
+  <input type="text" class="form-control" (input)="changeServerName($event)" />
+
+  <input type="text" class="form-control" [(ngModel)]="serverName" />
+</div>
