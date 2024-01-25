@@ -1,0 +1,13 @@
+<div style="width: 50%; margin: 1rem auto; text-align: center">
+  <input type="text" class="form-control" [(ngModel)]="userName" />
+  <p>{{ userName }}</p>
+
+  <button
+    style="width: fit-content"
+    class="btn btn-outline-primary"
+    [disabled]="!userName"
+    (click)="onBtnClicked()"
+  >
+    Reset USerName
+  </button>
+</div>

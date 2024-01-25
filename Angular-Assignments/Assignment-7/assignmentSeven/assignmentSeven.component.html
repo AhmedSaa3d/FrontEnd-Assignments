@@ -1,0 +1,63 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <!--
+          Create a Form with the following Controls and Validators
+          1) Project Name (should not be empty)
+          2) Mail (should not be a empty and a valid email)
+          3) Project Status Dropdown, with three values: 'Stable', 'Critical', 'Finished'
+          4) Submit Button
+
+          Add your own Validator which doesn't allow "Test" as a Project Name
+
+          Also implement that Validator as an async Validator (replace the other one)
+
+          Upon submitting the form, simply print the value to the console
+      -->
+
+      <form [formGroup]="myForm" (ngSubmit)="onSubmitFunc()">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Your Project Name"
+            formControlName="projectName"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Your E-mail"
+            formControlName="mailName"
+          />
+        </div>
+
+        <div class="mb-3">
+          <select class="form-select" formControlName="projStatus">
+            <option value="stable">Stable</option>
+            <option value="critical">Critical</option>
+            <option value="finished">Finished</option>
+          </select>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!myForm.valid"
+        >
+          Submit
+        </button>
+      </form>
+
+      <div *ngIf="finished">
+        <hr />
+        <h2 class="text-center">Entered Data</h2>
+        <p>Your Project Name : {{ myformFinished.projName }}</p>
+        <p>Your E-mail : {{ myformFinished.mailName }}</p>
+        <p>Your projStatus : {{ myformFinished.projStatus }}</p>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>

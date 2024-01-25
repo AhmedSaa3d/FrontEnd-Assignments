@@ -1,0 +1,9 @@
+<ul class="list-group">
+  <li
+    class="list-group-item list-group-item-action"
+    *ngFor="let inActive of users"
+  >
+    <span>{{ inActive.name }}</span> |
+    <a href="#" (click)="changeToActive(inActive.id)"> Set to Active</a>
+  </li>
+</ul>

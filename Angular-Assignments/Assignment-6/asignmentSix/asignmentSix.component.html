@@ -1,0 +1,76 @@
+<div class="container" class="mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <!-- Add a Form with the following Inputs (and Validators)
+           1) Mail address (should not be empty and should be an email address)
+           2) A Dropdown which allows the user to select from three different Subscriptions ("Basic", "Advanced", "Pro")
+              Set "Advanced" as Default
+           3) A Password field (should not be empty)
+           4) A Submit Button
+
+           Display a warning message if the Form is invalid AND was touched. Display a warning message below each input if it's invalid.
+
+           Upon submitting the form, you should simply print the Value of the Form to the Console.
+           Optionally, display it in your template.
+      -->
+      <form (ngSubmit)="onSubmit()" #myform="ngForm">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Your E-mail"
+            name="email"
+            ngModel
+            required
+            email
+            #email="ngModel"
+          />
+          <span *ngIf="!email.valid && email.touched">Enter Correct Email</span>
+        </div>
+        <div class="mb-3">
+          <select
+            class="form-select"
+            name="subscriptionType"
+            [ngModel]="advanced"
+          >
+            <option value="basic">Basic</option>
+            <option value="advanced">Advanced</option>
+            <option value="pro">Pro</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Enter Your Password"
+            name="password"
+            ngModel
+            required
+            #password="ngModel"
+          />
+          <span *ngIf="!password.valid && password.touched"
+            >Password Can't be Empty</span
+          >
+        </div>
+
+        <button
+          [disabled]="!myform.valid"
+          type="submit"
+          class="btn btn-primary"
+        >
+          Submit
+        </button>
+      </form>
+
+      <div *ngIf="displayData">
+        <hr />
+        <h2>Entered Data</h2>
+        <p>Your E-mail : {{ formObjedts.email }}</p>
+        <p>Your Password : {{ formObjedts.password }}</p>
+        <p>Your Subscription : {{ formObjedts.subscription }}</p>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>

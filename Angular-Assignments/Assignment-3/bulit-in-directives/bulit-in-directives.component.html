@@ -1,0 +1,26 @@
+<hr />
+
+<button
+  type="button"
+  class="btn btn-primary"
+  (click)="toggleP()"
+  style="margin-bottom: 1rem"
+>
+  show password
+</button>
+
+<p *ngIf="showClass">Secret Password = "Tuna"</p>
+
+<ul class="list-group">
+  <li
+    *ngFor="let item of logsArr"
+    class="list-group-item"
+    style="width: fit-content"
+    [ngStyle]="{
+      'background-color': item >= 5 ? 'blue' : 'transparent'
+    }"
+    [ngClass]="{ whiteColor: item >= 5 }"
+  >
+    Toggle Number {{ item }}
+  </li>
+</ul>
